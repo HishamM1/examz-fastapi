@@ -1,0 +1,6 @@
+pandas==2.1.1
+plotly==5.16.1
+reportlab==4.0.4
+sentence_transformers==2.2.2
+fastapi==0.103.0
+uvicorn==0.23.2
