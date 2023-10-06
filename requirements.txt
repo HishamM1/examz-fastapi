@@ -11,6 +11,6 @@ safetensors==0.3.3
 scikit-learn==1.0.2
 scipy==1.7.3
 sentence-transformers==2.2.2
-uvicorn==0.23.2
+uvicorn==0.22.0
 h11==0.12.0
 httptools==0.3.0
