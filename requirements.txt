@@ -1,5 +1,4 @@
 fastapi==0.103.1
-fastapi_cors==0.0.6
 fastjsonschema==2.18.0
 filelock==3.12.3
 huggingface-hub==0.16.4

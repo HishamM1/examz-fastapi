@@ -2,12 +2,12 @@ import pandas as pd
 import plotly.express as px
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 from sentence_transformers import SentenceTransformer, util
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Image
 from reportlab.lib.styles import getSampleStyleSheet
 from io import BytesIO
 import json
-from fastapi_cors import CORS
 
 
 model = SentenceTransformer('model')
@@ -17,7 +17,7 @@ app = FastAPI()
 origins = ["*"]
 
 app.add_middleware(
-    CORS,
+    CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
